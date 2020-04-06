@@ -17,6 +17,7 @@ class Student < ActiveRecord::Base
   def self.search(query)
     if !query.empty?
       where('NAME like ?', "%#{query}%")
-    
+    else 
+      
   end 
 end
